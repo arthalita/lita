@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>StartBiz Fun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="login-body">
+    <div class="login-box bounce">
+        <h2>🌈 StartBiz Fun</h2>
+        <p>Login dulu ya 😄</p>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login 🚀</button>
+        <p class="hint">Username: admin | Password: 123</p>
+    </div>
+</div>
+
+<!-- PRODUK PAGE -->
+<div id="productPage" class="hidden">
+    <header class="navbar">
+        <h2>🛍️ Produk Digital Marketing</h2>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <section class="upload-section">
+        <h3>📸 Upload Produk</h3>
+
+        <input type="text" id="productName" placeholder="Nama Produk">
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="addProduct()">Tambah Produk ✨</button>
+
+        <div class="product-list" id="productList"></div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
